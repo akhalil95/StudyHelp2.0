@@ -53,3 +53,35 @@
         alert('Time is up!');
     }
     }
+
+    // Add item to the todo list
+    function addItem() {
+        const todoInput = document.getElementById('todo-input');
+        const todoList = document.getElementById('todo-list');
+
+        if (todoInput.value === '') {
+          return; // Ignore empty input
+        }
+
+        const itemText = todoInput.value;
+        const listItem = document.createElement('li');
+        listItem.className = 'todo-item';
+        listItem.innerHTML = `
+        <span onclick="crossOut(this)">${itemText}</span>
+        <button onclick="deleteItem(this)">Delete</button>
+        `;
+
+        todoList.appendChild(listItem);
+        todoInput.value = '';
+    }
+
+      // Cross out the item
+    function crossOut(item) {
+        item.classList.toggle('crossed');
+    }
+
+      // Delete the item
+    function deleteItem(item) {
+        const listItem = item.parentNode;
+        listItem.remove();
+    }
