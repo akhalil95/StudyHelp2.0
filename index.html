@@ -9,8 +9,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div class="container-main">
+        <div class="Weather" id="weather"></div>
+        <div class="Time" id="time"></div>
+        <div class="Pomodoro">
+            <main class="container">
+                <h1>Study Help 2.0</h1>
+                <div class="timer">25:00</div>
+                <div class="buttons">
+                    <button onclick="startTimer()">Start</button>
+                    <button onclick="pauseTimer()">Pause</button>
+                    <button onclick="resetTimer()">Reset</button>
+                </div>
+            </main>
+        </div>
+    </div>
 
-
+<script src="/scripts/app.js"></script>
 </body>
 </html>
