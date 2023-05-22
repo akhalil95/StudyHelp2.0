@@ -13,4 +13,7 @@ This project was created to assist me in my studies. It utilizes HTML, CSS, and 
 - JavaScript
 - Weather API
 - Time API
+
+![Screenshot 2023-05-21 210329](https://github.com/akhalil95/StudyHelp2.0/assets/68371207/b991b2a5-0b64-4e46-9906-6ff29a6be8a5)
+
  
