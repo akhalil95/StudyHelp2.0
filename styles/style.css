@@ -52,6 +52,16 @@ Grid Settings
     font-size: 100px;
 }
 
+.buttons button, .add-button{
+    background-color: transparent;
+    color: #fffaf0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid #fffaf0;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
 .todo {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
@@ -62,11 +72,18 @@ Grid Settings
     height: 30px;
     margin-right: 10px;
     padding: 5px;
+    background-color: transparent;
+    color: #fffaf0;
+    border: 2px solid #fffaf0;
+    border-radius: 5px;
 }
 
 #todo-list {
     list-style-type: none;
     padding: 0;
+    background-color: transparent;
+    color: #fffaf0;
+
 }
 
 .todo-item {
@@ -77,6 +94,8 @@ Grid Settings
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid #fffaf0;
 }
 
 .crossed {
@@ -99,4 +118,8 @@ Grid Settings
 
 .todo-item button:hover {
     background-color: #ff4f42;
+}
+
+input[type="text"]::placeholder {
+    color: #fffaf0;
 }
