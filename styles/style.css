@@ -1,15 +1,16 @@
-html,body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-image: url("/images/8351137.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fffaf0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+body {
+  background-image: url("../images/8351137.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fffaf0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* ===========
@@ -17,109 +18,107 @@ Grid Settings
 ============== */
 
 .container-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .Weather {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .Time {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-    text-align: right;
-    font-family:'Orbitron', sans-serif ;
-    font-size: 30px;
-
-
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  text-align: right;
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
 }
 
 .Pomodoro {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 1;
-    text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  text-align: center;
 }
 
-.timer{
-    font-family:'Orbitron', sans-serif ;
-    font-size: 100px;
+.timer {
+  font-family: "Orbitron", sans-serif;
+  font-size: 100px;
 }
 
-.buttons button, .add-button{
-    background-color: transparent;
-    color: #fffaf0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 2px solid #fffaf0;
-    border-radius: 5px;
-    cursor: pointer;
-
+.buttons button,
+.add-button {
+  background-color: transparent;
+  color: #fffaf0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 2px solid #fffaf0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .todo {
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
 }
 
 #todo-input {
-    width: 300px;
-    height: 30px;
-    margin-right: 10px;
-    padding: 5px;
-    background-color: transparent;
-    color: #fffaf0;
-    border: 2px solid #fffaf0;
-    border-radius: 5px;
+  width: 300px;
+  height: 30px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: transparent;
+  color: #fffaf0;
+  border: 2px solid #fffaf0;
+  border-radius: 5px;
 }
 
 #todo-list {
-    list-style-type: none;
-    padding: 0;
-    background-color: transparent;
-    color: #fffaf0;
-
+  list-style-type: none;
+  padding: 0;
+  background-color: transparent;
+  color: #fffaf0;
 }
 
 .todo-item {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-    background-color: transparent;
-    border: 1px solid #fffaf0;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid #fffaf0;
 }
 
 .crossed {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .todo-item span {
-    flex-grow: 1;
-    cursor: pointer;
+  flex-grow: 1;
+  cursor: pointer;
 }
 
 .todo-item button {
-    background-color: #ff6961;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
+  background-color: #ff6961;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .todo-item button:hover {
-    background-color: #ff4f42;
+  background-color: #ff4f42;
 }
 
 input[type="text"]::placeholder {
-    color: #fffaf0;
+  color: #fffaf0;
 }

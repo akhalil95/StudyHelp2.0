@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Help 2.0</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
     <div class="container-main">
-        <div class="Weather" id="weather"></div>
-        <div class="Time" id="time"></div>
-        <div class="Pomodoro">
-            <main class="container">
-                <div class="timer">25:00</div>
-                <div class="buttons">
-                    <button onclick="startTimer('pomodoro')">Start Pomodoro</button>
-                    <button onclick="startTimer('shortBreak')">Start Short Break</button>
-                    <button onclick="startTimer('longBreak')">Start Long Break</button>
-                    <button onclick="pauseTimer()">Pause</button>
-                    <button onclick="resetTimer()">Reset</button>
-                </div>
-            </main>
-        </div>
-        <div class="todo">
-            <h2>Todo List</h2>
-            <input id="todo-input" type="text" placeholder="Add a new item">
-            <button class="add-button" onclick="addItem()">Add</button>
+      <div class="Weather" id="weather"></div>
+      <div class="Time" id="time"></div>
+      <div class="Pomodoro">
+        <main class="container">
+          <div class="timer">25:00</div>
+          <div class="buttons">
+            <button onclick="startTimer('pomodoro')">Start Pomodoro</button>
+            <button onclick="startTimer('shortBreak')">
+              Start Short Break
+            </button>
+            <button onclick="startTimer('longBreak')">Start Long Break</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+          </div>
+        </main>
+      </div>
+      <div class="todo">
+        <h2>Todo List</h2>
+        <input id="todo-input" type="text" placeholder="Add a new item" />
+        <button class="add-button" onclick="addItem()">Add</button>
 
-            <ul id="todo-list"></ul>
-        </div>
+        <ul id="todo-list"></ul>
+      </div>
     </div>
 
-<script src="/scripts/app.js"></script>
-</body>
+    <script src="scripts/app.js"></script>
+  </body>
 </html>
